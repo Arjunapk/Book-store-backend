@@ -1,0 +1,14 @@
+GET http://localhost:3030/booking-slot/user-details/
+###
+
+POST http://localhost:3030/booking-slot/create/
+Content-Type: application/json
+
+{
+    "id": "4",
+    "name": "Mahabharata",
+    "author": "Om Books Editorial Team",
+    "tumbnail": "https://m.media-amazon.com/images/I/51658Wi7xqS._SX198_BO1,204,203,200_QL40_FMwebp_.jpg",
+    "price": "999",
+    "description": "Mahabharata is one of the two major epics of ancient India. The original composition was written in Sanskrit language by Ved Vyasa. It is an amalgamation of Hindu mythology and philosophy and is the longest epic poem. It is the narration of the great Kurukshetra War and the struggle and tensions between two groups of cousins."
+}
