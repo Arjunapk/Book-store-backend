@@ -1,7 +1,7 @@
-GET http://localhost:3030/booking-slot/user-details/
+GET http://localhost:3030/book-details/
 ###
 
-POST http://localhost:3030/booking-slot/create/
+POST http://localhost:3030/book-create/
 Content-Type: application/json
 
 {

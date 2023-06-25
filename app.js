@@ -31,13 +31,13 @@ const initializeDBAndServer = async () => {
 
 initializeDBAndServer()
 
-app.get('/booking-slot/user-details/', async (request, response) => {
+app.get('/book-details/', async (request, response) => {
     const getUserDetailsQuery = 'SELECT * FROM book_details;'
     const data = await db.all(getUserDetailsQuery)
     response.send(data)
 })
 
-app.post('/booking-slot/create/', async (request, response) => {
+app.post('/book-create/', async (request, response) => {
     const {id, name, author, thumbnail, price, description} = request.body
     const getCreateBookingSlotQuery = `INSERT INTO book_details (id, name, author, thumbnail, price, description) VALUES ('${id}', '${name}', '${author}', '${thumbnail}', '${price}', '${description}');`
     await db.run(getCreateBookingSlotQuery)
